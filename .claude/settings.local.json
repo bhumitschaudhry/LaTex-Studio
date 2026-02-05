@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rustc:*)",
+      "Bash(npm install:*)",
+      "Bash(copy:*)",
+      "Bash(dir:*)",
+      "Bash(powershell:*)",
+      "Bash(npm run tauri:dev:*)"
+    ]
+  }
+}
