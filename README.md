@@ -1,61 +1,86 @@
 # LaTeX Studio
 
-A lightweight Markdown + LaTeX editor with a live preview, built with React, Vite, and Tauri.
+A lightweight, modern Markdown + LaTeX editor with live preview, built for performance and ease of use.
 
-## Highlights
-- Split-pane editor and live preview
-- Markdown rendering with LaTeX math (inline and block)
-- Open/save Markdown or text files
-- Drag-and-drop file loading
-- Keyboard save shortcut (`Ctrl/Cmd + S`)
-- Runs as a Tauri desktop app, with a browser fallback for file I/O
+## 🚀 Highlights
 
-## Tech Stack
-- React 19 + TypeScript
-- Vite
-- Tailwind CSS (with Typography)
-- KaTeX for LaTeX rendering
-- Tauri 2 (desktop shell + native file access)
+- **Live Preview**: Real-time rendering of Markdown and LaTeX math.
+- **Split-Pane Editor**: Edit code on one side and see the result on the other.
+- **LaTeX Support**: Full support for inline (`$E=mc^2$`) and block (`$$...$$`) math using KaTeX.
+- **File Management**: Open and save Markdown (`.md`) or text (`.txt`) files seamlessly.
+- **Drag & Drop**: Easily load files by dragging them into the editor.
+- **Cross-Platform**: Runs as a native desktop app via Tauri (Windows, macOS, Linux) or in the browser.
+- **Shortcuts**: Productivity-focused with shortcuts like `Ctrl/Cmd + S` for saving.
 
-## Getting Started
+## 🛠 Tech Stack
+
+- **Frontend**: [React 19](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/) (with Typography plugin)
+- **Rendering**: [KaTeX](https://katex.org/) (via `rehype-katex` & `remark-math`)
+- **Desktop Framework**: [Tauri 2](https://tauri.app/) (Rust backend)
+- **Icons**: [Lucide React](https://lucide.dev/)
+
+## 🏁 Getting Started
 
 ### Prerequisites
-- Node.js 18+ (recommended)
-- Rust + Tauri prerequisites for desktop builds
 
-### Install
+- **Node.js**: v18 or higher (v20+ recommended)
+- **Rust**: Required for building the desktop application. Follow the [Tauri prerequisites guide](https://tauri.app/v1/guides/getting-started/prerequisites).
+
+### Installation
+
+Clone the repository and install dependencies:
+
 ```bash
+git clone https://github.com/yourusername/latex-studio.git
+cd latex-studio
 npm install
 ```
 
-### Run (Web Dev Server)
+### Development
+
+**Web Mode** (Fastest for UI changes):
 ```bash
 npm run dev
 ```
 
-### Run (Tauri Desktop)
+**Desktop Mode** (Test native functionality):
 ```bash
 npm run tauri:dev
 ```
 
-### Build (Web)
+### Building for Production
+
+**Web Build**:
 ```bash
 npm run build
 ```
 
-### Build (Tauri Desktop)
+**Desktop Build**:
 ```bash
 npm run tauri:build
 ```
 
-## Project Structure
-- `src/` React app and UI components
-- `src-tauri/` Tauri backend and native commands
-- `assets/` static assets
+## 📂 Project Structure
 
-## File I/O Behavior
-- In Tauri, file open/save uses the dialog plugin plus Rust commands in `src-tauri/src/main.rs`.
-- In the browser, opening uses a file input and saving triggers a download.
+```
+latex-studio/
+├── src/               # React frontend
+│   ├── components/    # UI components (Editor, Preview)
+│   ├── utils/         # Helper functions
+│   ├── App.tsx        # Main application component
+│   └── main.tsx       # Entry point
+├── src-tauri/         # Rust backend (Tauri)
+│   ├── src/           # Rust source code
+│   └── tauri.conf.json # Tauri configuration
+└── assets/            # Static assets
+```
 
-## License
-Not specified yet.
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is currently unlicensed.
