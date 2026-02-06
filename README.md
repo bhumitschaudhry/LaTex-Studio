@@ -12,6 +12,15 @@ A lightweight, modern Markdown + LaTeX editor with live preview, built for perfo
 - **Cross-Platform**: Runs as a native desktop app via Tauri (Windows, macOS, Linux) or in the browser.
 - **Shortcuts**: Productivity-focused with shortcuts like `Ctrl/Cmd + S` for saving.
 
+## 📥 Download
+
+Download the latest version for Windows:
+
+- **Installer (.exe)**: [Download Setup](https://github.com/bhumitschaudhry/LaTex-Studio/releases/latest/download/LaTeX%20Studio_0.1.0_x64-setup.exe)
+- **MSI Installer**: [Download MSI](https://github.com/bhumitschaudhry/LaTex-Studio/releases/latest/download/LaTeX%20Studio_0.1.0_x64_en-US.msi)
+
+> **Note**: These links will point to the latest release once it is published on GitHub.
+
 ## 🛠 Tech Stack
 
 - **Frontend**: [React 19](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
@@ -33,7 +42,7 @@ A lightweight, modern Markdown + LaTeX editor with live preview, built for perfo
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/yourusername/latex-studio.git
+git clone https://github.com/bhumitschaudhry/LaTex-Studio.git
 cd latex-studio
 npm install
 ```
